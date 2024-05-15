@@ -4,7 +4,7 @@ expose 3389
 
 run pacman -Syu --noconfirm 
 
-run pacman -S git sudo base-devel
+run pacman -S --noconfirm git sudo base-devel
 
 run useradd -m container
 
