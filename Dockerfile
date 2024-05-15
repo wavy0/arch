@@ -1,6 +1,6 @@
 from archlinux
 
-run pacman -Syu --noconfirm
+run pacman -Syu --noconfirm 
 
 run useradd -m container
 
