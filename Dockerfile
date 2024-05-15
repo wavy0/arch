@@ -1,5 +1,7 @@
 from archlinux
 
+expose 3389
+
 run pacman -Syu --noconfirm 
 
 run useradd -m container
