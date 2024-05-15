@@ -10,7 +10,7 @@ run useradd -m container
 
 run echo "container:a" | chpasswd
 
-run echo "container ALL=(ALL:ALL) ALL" > /etc/sudoers
+run echo "container ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
 run echo "root:a" | chpasswd
 
