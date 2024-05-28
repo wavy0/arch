@@ -2,6 +2,8 @@ from archlinux
 
 expose 3389
 
+expose 3388
+
 run pacman -Syu --noconfirm 
 
 run pacman -S --noconfirm git sudo base-devel
