@@ -14,12 +14,10 @@ run pacman -S --noconfirm git sudo base-devel
 
 run echo "container ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
-user container
-
 workdir /home/container
 
 run git clone https://aur.archlinux.org/yay.git
 
-run cd yay && makepkg -si --noconfirm --needed
+run sudo -u container && cd yay && makepkg -si --noconfirm --needed
 
 CMD ["/usr/sbin/init"]
