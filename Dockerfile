@@ -22,6 +22,8 @@ run git clone https://aur.archlinux.org/yay.git
 
 run cd yay && makepkg -si --noconfirm --needed
 
+run yay -S --noconfirm --needed xrdp xorgxrdp
+
 user root
 
 CMD ["/usr/sbin/init"]
