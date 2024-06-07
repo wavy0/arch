@@ -4,6 +4,10 @@ expose 3388
 
 run useradd -m container
 
+run echo "container:a" | chpasswd
+
+run echo "root:a" | chpasswd
+
 run pacman -Syu --noconfirm 
 
 run pacman -S --noconfirm git sudo base-devel
@@ -17,9 +21,5 @@ workdir /home/container
 run git clone https://aur.archlinux.org/yay.git
 
 run cd yay && makepkg -si --noconfirm --needed
-
-run echo "container:a" | chpasswd
-
-run echo "root:a" | chpasswd
 
 CMD ["/usr/sbin/init"]
