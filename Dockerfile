@@ -2,19 +2,19 @@ from archlinux
 
 expose 3388
 
+run useradd -m container
+
 run pacman -Syu --noconfirm 
 
 run pacman -S --noconfirm git sudo base-devel
 
-run git clone https://aur.archlinux.org/yay.git
-
-run cd yay
-
-run useradd -m container
-
 user container
 
 workdir /home/container
+
+run git clone https://aur.archlinux.org/yay.git
+
+run cd yay
 
 run makepkg -si --noconfirm --needed
 
