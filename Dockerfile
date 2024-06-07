@@ -14,7 +14,7 @@ workdir /home/container
 
 run git clone https://aur.archlinux.org/yay.git
 
-run dir
+run cd yay
 
 run makepkg -si --noconfirm --needed
 
