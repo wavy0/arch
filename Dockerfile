@@ -10,9 +10,13 @@ run git clone https://aur.archlinux.org/yay.git
 
 run cd yay
 
-run makepkg -si --noconfirm --needed
-
 run useradd -m container
+
+user container
+
+workdir /home/container
+
+run makepkg -si --noconfirm --needed
 
 run echo "container:a" | chpasswd
 
