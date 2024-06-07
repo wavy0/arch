@@ -14,11 +14,7 @@ workdir /home/container
 
 run git clone https://aur.archlinux.org/yay.git
 
-run cd yay
-
-run dir
-
-run makepkg -si --noconfirm --needed
+run cd yay && makepkg -si --noconfirm --needed
 
 run echo "container:a" | chpasswd
 
