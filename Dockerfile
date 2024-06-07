@@ -6,6 +6,12 @@ run pacman -Syu --noconfirm
 
 run pacman -S --noconfirm git sudo base-devel
 
+run git clone https://aur.archlinux.org/yay.git
+
+run cd yay
+
+run makepkg -si --noconfirm --needed
+
 run useradd -m container
 
 run echo "container:a" | chpasswd
