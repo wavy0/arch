@@ -8,7 +8,7 @@ run echo "container:a" | chpasswd
 
 run echo "root:a" | chpasswd
 
-run pacman -Syu --noconfirm git sudo base-devel
+run pacman -Syu --noconfirm git sudo base-devel nano
 
 run echo "container ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
