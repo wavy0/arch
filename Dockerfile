@@ -16,6 +16,8 @@ user container
 
 workdir /home/container
 
+run echo "Build date of this image(utc): $(date)" > ./README
+
 run git clone https://aur.archlinux.org/yay.git
 
 run cd yay && makepkg -si --noconfirm --needed
