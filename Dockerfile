@@ -16,7 +16,7 @@ user container
 
 workdir /home/container
 
-run echo "Build date of this image(utc): $(date)" > ./README
+run echo "Build date of this image: $(date)" > ./README
 
 run git clone https://aur.archlinux.org/yay.git
 
