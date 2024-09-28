@@ -24,6 +24,8 @@ run cd yay && makepkg -si --noconfirm --needed
 
 run yay -S --noconfirm --needed xrdp xorgxrdp
 
+run rm -rf /home/container/yay
+
 user root
 
 CMD ["/usr/sbin/init"]
