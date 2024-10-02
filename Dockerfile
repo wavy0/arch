@@ -2,7 +2,7 @@ from archlinux
 
 expose 3388
 
-run useradd -m container
+run useradd -m container 
 
 run echo "container:a" | chpasswd
 
