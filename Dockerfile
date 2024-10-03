@@ -2,6 +2,8 @@ from archlinux
 
 expose 3388
 
+run echo $(date)
+
 run useradd -m container 
 
 run echo "container:a" | chpasswd
