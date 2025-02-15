@@ -2,7 +2,7 @@ from archlinux
 
 expose 3388
 
-run echo $(date)
+run echo $(date) 
 
 run useradd -m container 
 
